@@ -7,9 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		351A9B7D21C00967004271D0 /* InputManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 351A9B7B21C0084E004271D0 /* InputManager.swift */; };
+		351A9B7E21C00D59004271D0 /* InputManager.swift in Headers */ = {isa = PBXBuildFile; fileRef = 351A9B7B21C0084E004271D0 /* InputManager.swift */; settings = {ATTRIBUTES = (Public, ); }; };
 		35896AEB21C0025700F30464 /* InputManager.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 35896AE121C0025700F30464 /* InputManager.framework */; };
 		35896AF021C0025700F30464 /* InputManagerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35896AEF21C0025700F30464 /* InputManagerTests.swift */; };
-		35896AF221C0025700F30464 /* InputManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 35896AE421C0025700F30464 /* InputManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -23,6 +24,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		351A9B7B21C0084E004271D0 /* InputManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputManager.swift; sourceTree = "<group>"; };
 		35896AE121C0025700F30464 /* InputManager.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = InputManager.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		35896AE421C0025700F30464 /* InputManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = InputManager.h; sourceTree = "<group>"; };
 		35896AE521C0025700F30464 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -73,6 +75,7 @@
 			children = (
 				35896AE421C0025700F30464 /* InputManager.h */,
 				35896AE521C0025700F30464 /* Info.plist */,
+				351A9B7B21C0084E004271D0 /* InputManager.swift */,
 			);
 			path = InputManager;
 			sourceTree = "<group>";
@@ -93,7 +96,7 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				35896AF221C0025700F30464 /* InputManager.h in Headers */,
+				351A9B7E21C00D59004271D0 /* InputManager.swift in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -148,6 +151,7 @@
 				TargetAttributes = {
 					35896AE021C0025700F30464 = {
 						CreatedOnToolsVersion = 10.1;
+						LastSwiftMigration = 1010;
 					};
 					35896AE921C0025700F30464 = {
 						CreatedOnToolsVersion = 10.1;
@@ -194,6 +198,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				351A9B7D21C00967004271D0 /* InputManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -341,6 +346,7 @@
 		35896AF621C0025700F30464 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -359,6 +365,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.inputmanager.control.InputManager;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -367,6 +374,7 @@
 		35896AF721C0025700F30464 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -393,6 +401,7 @@
 		35896AF921C0025700F30464 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = A9G596Z339;
 				INFOPLIST_FILE = InputManagerTests/Info.plist;
@@ -411,6 +420,7 @@
 		35896AFA21C0025700F30464 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = A9G596Z339;
 				INFOPLIST_FILE = InputManagerTests/Info.plist;
