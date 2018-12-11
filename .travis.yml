@@ -1,6 +1,4 @@
 language: swift
-osx_image: xcode8.3
-install:
-  - bundle install
+osx_image: xcode10
 script:
   - fastlane scan
